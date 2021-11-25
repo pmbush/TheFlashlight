@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var isLightOn = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateUI()
     }
-
-
+    
+    // function which switch display collor
+    fileprivate func updateUI() {
+        view.backgroundColor = isLightOn ? .white : .black
+    }
+    
+    @IBAction func buttonPressed() {
+        isLightOn.toggle()
+        updateUI()
+    }
+    
 }
 
