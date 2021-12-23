@@ -11,7 +11,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var buttonOfFlashligh: UIButton!
+    @IBOutlet weak var buttonOfFlashlight: UIButton!
     
     
     var numberOfColor = 1
@@ -74,18 +74,18 @@ class ViewController: UIViewController {
     
     @IBAction func pressedButton(_ sender: UIButton) {
         
-        if buttonOfFlashligh.tag == 0 {
+        if buttonOfFlashlight.tag == 0 {
             toggleFlash(on: true)
-            buttonOfFlashligh.tag = 1
-            buttonOfFlashligh.setTitle("Turn Off", for: .normal)
-            buttonOfFlashligh.setImage(UIImage(systemName: "flashlight.on.fill"), for: .normal)
+            buttonOfFlashlight.tag = 1
+            buttonOfFlashlight.setTitle("Turn Off", for: .normal)
+            buttonOfFlashlight.setImage(UIImage(systemName: "flashlight.on.fill"), for: .normal)
         }
         
-        else if buttonOfFlashligh.tag == 1 {
+        else if buttonOfFlashlight.tag == 1 {
             toggleFlash(on: false)
-            buttonOfFlashligh.tag = 0
-            buttonOfFlashligh.setTitle("Turn On", for: .normal)
-            buttonOfFlashligh.setImage(UIImage(systemName: "flashlight.off.fill"), for: .normal)
+            buttonOfFlashlight.tag = 0
+            buttonOfFlashlight.setTitle("Turn On", for: .normal)
+            buttonOfFlashlight.setImage(UIImage(systemName: "flashlight.off.fill"), for: .normal)
         }
         
         

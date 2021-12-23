@@ -37,7 +37,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonOfFlashligh" destination="6Le-zw-cdA" id="gM0-Qg-fR9"/>
+                        <outlet property="buttonOfFlashlight" destination="6Le-zw-cdA" id="gM0-Qg-fR9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
